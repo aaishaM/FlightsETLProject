@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "OpenFlights_Analysis", "OpenFlights_Analysis\OpenFlights_Analysis.dwproj", "{6CC643C9-7244-4066-AA58-DA3D7CB3C402}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CC643C9-7244-4066-AA58-DA3D7CB3C402}.Development|Default.ActiveCfg = Development
+		{6CC643C9-7244-4066-AA58-DA3D7CB3C402}.Development|Default.Build.0 = Development
+		{6CC643C9-7244-4066-AA58-DA3D7CB3C402}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9830CBE5-1007-4CB8-B9F4-0C31B2874436}
+	EndGlobalSection
+EndGlobal

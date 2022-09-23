@@ -1,0 +1,487 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b26829a3-1b6e-446a-bdc7-9267788a1c4f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Airport</ID>
+  <Name>Dim Airport</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-317" scrolltop="-11" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="94" x="11557" y="7620" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimCountry" left="446" top="0" logicalid="4" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="3027" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000d30b0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimCountry" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dimAirport" left="20" top="5427" logicalid="5" controlid="2" masterid="0" hint1="0" hint2="0" width="3852" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00000c0f000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dimAirport" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1547" top="2528" logicalid="6" controlid="3" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__dimAirpor__Count__286302EC]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1946" y="3027" />
+              <point x="1946" y="5427" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-317</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-11</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>94</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e45b85dc-43b6-4da3-894e-45007a8a7f6b">
+    <DataSourceViewID>DataSourceView_Open Flight DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="b6eae269-a843-4597-af8b-1ed0e9e5d4ae">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="04d185ff-bc3a-4eea-b464-d55c5b50c1ef">
+      <ID>Sk Airport</ID>
+      <Name>Sk Airport</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd87653f-056a-47f0-b6d6-5246af207ac2">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="688e922e-afc3-4b4d-a9bc-f764d0d752f3">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>sk_airport</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="d55a1907-9109-458a-a6ec-38aea30b2754">
+          <AttributeID>Sk Country</AttributeID>
+          <Name>Sk Country</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="870a8b99-830a-454d-850c-2a33c2fc9a83">
+          <AttributeID>Airport ID</AttributeID>
+          <Name>Airport ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9c3ec304-93ae-494c-8672-c96625bd2ba0">
+          <AttributeID>Name</AttributeID>
+          <Name>Name_</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f08675d1-0edb-4545-bc43-6fa8d811246b">
+          <AttributeID>City</AttributeID>
+          <Name>City</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="792d4fd0-dc6a-4d16-9976-c6b619ae58b5">
+          <AttributeID>IATA</AttributeID>
+          <Name>IATA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4b016698-b0aa-41c8-8919-aa5e2dd14de8">
+          <AttributeID>ICAO</AttributeID>
+          <Name>ICAO</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="46b0647c-6952-49f5-9288-7acc7d4aed78">
+          <AttributeID>Latitude</AttributeID>
+          <Name>Latitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2456c56e-f5c5-4228-a206-d831658e9d64">
+          <AttributeID>Longitude</AttributeID>
+          <Name>Longitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="17a7d392-3cbb-4402-8044-0dc2d7622945">
+          <AttributeID>Altitude</AttributeID>
+          <Name>Altitude</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c97cb1b5-497b-47ed-988e-d4efa01befcf">
+          <AttributeID>Timezone</AttributeID>
+          <Name>Timezone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d7da19cd-db05-4307-9c27-dbd9278ce8cf">
+          <AttributeID>DST</AttributeID>
+          <Name>DST</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="efe7a3e6-a4c2-4157-ae2e-8d465a2a22d8">
+          <AttributeID>Database Timezone</AttributeID>
+          <Name>Database Timezone</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="379a5d98-dfb4-4449-bb11-3a306c559dad">
+          <AttributeID>Type</AttributeID>
+          <Name>Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="69e2439b-9523-499c-90b0-cac410bbbd2a">
+          <AttributeID>Source</AttributeID>
+          <Name>Source</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="682bcee0-d3b7-4c27-97ad-945f96765ab7">
+          <AttributeID>Insert Date</AttributeID>
+          <Name>Insert Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="88ea0e42-e435-4ea9-ae93-dc2f3830bb0d">
+          <AttributeID>Modified Date</AttributeID>
+          <Name>Modified Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="051f95a9-b02c-48a5-ba89-373269ba89a2">
+          <AttributeID>Country 1</AttributeID>
+          <Name>Country 1</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4059940a-86cc-445a-a9d4-2adde8dd209d">
+          <AttributeID>Country</AttributeID>
+          <Name>Country</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9d491c3d-a5e6-4c84-9358-7a597c7c9d62">
+      <ID>Sk Country</ID>
+      <Name>Sk Country</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2c492cce-7a01-4842-91f7-7b15b93568ab">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c44cfeb8-fab9-4dda-9d46-3da2b06fcec5">
+            <TableID>dbo_dimCountry</TableID>
+            <ColumnID>sk_country</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3d04ed7e-12ba-4cb0-860e-9a142f99ab91">
+      <ID>Airport ID</ID>
+      <Name>Airport ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7ac88a20-18bf-4283-85e7-47a100977159">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c358088a-b9b2-4696-b9ea-e3fd89b8a8aa">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Airport_ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b4fcdf4b-5250-4687-a6c8-3e9ea971817d">
+      <ID>Name</ID>
+      <Name>Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bab61741-167b-4340-8771-211ff989c289">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="bb0c01d2-bfaa-4c3e-84fb-a44f6f08cfc7">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="497d8041-30d6-40e3-afed-b342238a6aae">
+      <ID>City</ID>
+      <Name>City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="871344d5-7576-4da6-a4d7-7faa0c9df734">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d8417125-cbe8-49fb-b892-3f90e844dd91">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>City</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7160bfc1-f748-47a7-94a4-b70aa049d290">
+      <ID>IATA</ID>
+      <Name>IATA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d5bcd25b-5ad0-4283-899d-dafc0976a1ff">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9cb4c0a0-7499-4aec-9e02-0929a5647bd7">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>IATA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d3eae488-33d3-4dcb-a9a6-b983c96f483b">
+      <ID>ICAO</ID>
+      <Name>ICAO</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="580ccdbd-7ea5-477c-9300-fb09c6cbfeec">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="88ab7e14-f80e-4932-a2b9-c941ded0d2fe">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>ICAO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="51039b2b-8df5-40ef-8e5d-67e6f8b29fbc">
+      <ID>Latitude</ID>
+      <Name>Latitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c4700efd-82cf-4ff3-bb87-755dbbc60d24">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="82005a95-6b01-4049-9a54-c5c640eca6a9">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Latitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="16b11a91-d2a7-4d31-b9a0-c7384455b233">
+      <ID>Longitude</ID>
+      <Name>Longitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf97210e-7b69-42eb-b18f-99e8a4da9c9a">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8bca3d41-ab0a-43e2-931a-56c3978c3cb0">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Longitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="582c9eb4-6e6c-40ae-9af7-4f410fae2911">
+      <ID>Altitude</ID>
+      <Name>Altitude</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="601d54a7-e476-49e8-956b-2265f222a86e">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0895d988-e74a-44e7-9d20-df61f98a15ad">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Altitude</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="471f222e-fed2-428a-95ca-5ded6c71783e">
+      <ID>Timezone</ID>
+      <Name>Timezone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fc734a9f-3e57-4729-aaec-7b0f8a3e5ab5">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6947b30-31e9-4a22-b736-9dc3f66edd11">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Timezone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1f9ac773-bdf5-4898-af15-5b6826f5f358">
+      <ID>DST</ID>
+      <Name>DST</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="09312612-e7a5-43ae-959c-3df39d12e9d9">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7b543b27-5bed-478e-9274-c6954fac00b7">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>DST</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7e54b20f-328c-4d43-bf05-d6dd4c385ce3">
+      <ID>Database Timezone</ID>
+      <Name>Database Timezone</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="18993513-56b6-4cbb-ab2f-3b82041ae519">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9ea00d41-74cc-400d-9221-7806950d4483">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Database_Timezone</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="340efda4-8d10-41c9-a8c7-a0bc46c28180">
+      <ID>Type</ID>
+      <Name>Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f6f7585-07e2-48ab-b42c-565340c536de">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="28b4c6a1-15cb-4840-9ce4-a04e8a43e539">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5f76728f-b66b-496e-acfa-d74553eb6c8e">
+      <ID>Source</ID>
+      <Name>Source</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd6f6e19-f1ef-4c68-9b32-25be5adf306f">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5630f960-d286-4191-8883-37fc3084e897">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>Source</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cbb2a9d6-0382-470e-9680-bab9739fed5c">
+      <ID>Insert Date</ID>
+      <Name>Insert Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3979a560-e3bc-4c81-9a78-5a796fce7597">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40a5d01e-9afe-4dfd-b7c2-4cd84268a3e5">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>insertDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5cbf98d0-362d-4320-a1ad-02c550cefbab">
+      <ID>Modified Date</ID>
+      <Name>Modified Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="91de9f5a-ddac-4194-b6da-e7c500b527ca">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a63ecda8-b374-4287-b71f-3955fbe0e4d0">
+            <TableID>dbo_dimAirport</TableID>
+            <ColumnID>modifiedDate</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="da63a06b-b7ca-4bc8-9f69-3182a397493a">
+      <ID>Country 1</ID>
+      <Name>Country 1</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c1f16522-bbd2-4b35-a8e4-f487fa44113e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c847edfc-1049-461a-887e-ea9ededdffab">
+            <TableID>dbo_dimCountry</TableID>
+            <ColumnID>Country</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f32ecf33-1e90-42ff-a56e-6acd623b8f76">
+      <ID>Country</ID>
+      <Name>Country</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="dacbe027-7a14-4661-896d-de657153ee3c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ea12314e-d914-41b0-8d74-9fcf57dc1396">
+            <TableID>dbo_dimCountry</TableID>
+            <ColumnID>Country</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
